@@ -18,15 +18,3 @@ Route::get('/', function () {
 Route::get('projects', function () {
 	return view('front');
 });
-
-/*Route::get('/{locale?}', function ($locale = null) {
-	if($locale == null) {
-		return Redirect::to(Session::get('my.locale', Config::get('app.locale')));
-	}
-	else {
-		Session::put('my.locale', $locale);
-		App::setLocale($locale);
-
-    	return view('front');
-	}
-});*/
